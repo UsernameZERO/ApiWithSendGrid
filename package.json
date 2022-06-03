@@ -1,0 +1,21 @@
+{
+  "name": "api_service_with_sendgrid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "node build/src/server.js",
+    "postinstall": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "@types/express": "^4.17.13",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
+  }
+}
