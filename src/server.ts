@@ -107,7 +107,7 @@ app.post('/send', async (req,res)=>{
          {
             const msg = {
                 to : req.body.email, 
-                from: 'iamvamsi999@gmail.com',
+                from: 'rishicy26@gmail.com',
                 subject: 'Sending with SendGrid is Fun',
                 text: `Hi ${req.body.name}, Your result is ${stat} `,
                 html: `<h1>Hi ${req.body.name}, Your result is ${stat}</h1>`,
