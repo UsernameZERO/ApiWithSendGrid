@@ -2,12 +2,13 @@ import express from 'express';
 import http from 'http';
 import { connect, connection, model, Schema } from 'mongoose';
 import sgMail, { MailService } from '@sendgrid/mail';
-import { environment } from '../env';
+import { environment } from './env';
 
 const Port = process.env.PORT || 1111;
 const app = express();
 app.use(express.urlencoded({extended: false}));
 
+//Key
 sgMail.setApiKey(environment.SENDGRID_API_KEY);
 
 //Connecting mongoDB
